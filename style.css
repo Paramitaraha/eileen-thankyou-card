@@ -1,0 +1,130 @@
+html, body{
+    width: 100%;
+    min-height: 100vh;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+ body{
+     background: url("/green-flower-bouquet-on-white-background-961402.jpg");
+     background-position-x: 40%;
+     background-position-y: -60%;
+     min-height: 100vh;
+     overflow: hidden;
+     background-size: cover;
+     background-repeat: no-repeat;
+ }
+ h1{
+    font-family: 'Yellowtail', cursive;
+    color: rgb(83, 19, 76);
+    text-align: center;
+ }
+
+ h2{
+    font-family: 'Dancing Script', cursive;
+    color: maroon;
+    text-align: center;
+    font-size: 2rem;
+ }
+ h2.teacher{
+     font-size: 3rem;
+     animation: teacherText 7s linear  1 forwards ;
+     font-family: 'Fondamento', cursive;
+ }
+ @keyframes teacherText {
+     0% {
+         transform: translateX(-300px);
+         opacity: 0.4;
+     }
+
+     10% {
+         transform: translateX(-80px);
+         opacity: .4;
+     }
+     30% {
+        transform: translateX(200px);
+        opacity: .6;
+    }
+
+    60% {
+        transform: translateX(500px);
+        opacity: .65;
+    }
+
+    80% {
+        transform: translateX(700px);
+        opacity: .65;
+    }
+    
+    95% {
+        transform: translateX(900px);
+        opacity: .04;
+    }
+
+    100% {
+        opacity: 0;
+    }
+ }
+ h2:hover{
+     color: rgb(55, 55, 197);
+ }
+ .container{
+     width: 350px;
+     height: 370px;
+     background: url("/red-envelope-with-fresh-red-flowers-inside-4219890.jpg") center/cover no-repeat;
+     position: relative;
+     left: 45%;
+     /* transform: translate(-50%,-50%); */
+     perspective: 1000px;
+     object-fit: cover;
+     transform: translateY(20%);
+
+ }
+ .cover{
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     left: 0px;
+     background-color: #9eb5d1;
+     transform: rotateY(20deg);
+     transform-style: preserve-3d;
+     transform-origin: left;
+     transition: all 1s ease-in;
+ }
+
+ .container:hover .cover{
+     transform: rotateY(-180deg);
+     
+ }
+
+
+ figure{
+     margin: 0;
+     display: block;
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     backface-visibility: hidden;
+ }
+
+ figure.front{
+    background: url("/black-and-gray-desk-globe-1236421.jpg") center/cover;
+ }
+
+ figure.back{
+     background: url("/thank-you-signage-2072165.jpg") center/cover;
+     transform: rotateY(180deg);
+     
+}
+
+footer{
+    font-size: 1.5rem;
+    position: absolute;
+    top: 90%;
+    left: 3%;
+}
+footer p{
+   color: rgb(104, 16, 104);
+}
+
