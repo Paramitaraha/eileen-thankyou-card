@@ -1,6 +1,7 @@
 html, body{
     width: 100%;
     min-height: 100vh;
+    background: rgb(247, 247, 241);
 }
 *{
     margin: 0;
@@ -14,7 +15,9 @@ html, body{
      overflow: hidden;
      background-size: cover;
      background-repeat: no-repeat;
+
  }
+
  h1{
     font-family: 'Yellowtail', cursive;
     color: rgb(83, 19, 76);
@@ -27,11 +30,13 @@ html, body{
     text-align: center;
     font-size: 2rem;
  }
+
  h2.teacher{
      font-size: 3rem;
      animation: teacherText 7s linear  1 forwards ;
      font-family: 'Fondamento', cursive;
  }
+
  @keyframes teacherText {
      0% {
          transform: translateX(-300px);
@@ -66,9 +71,12 @@ html, body{
         opacity: 0;
     }
  }
+
+
  h2:hover{
      color: rgb(55, 55, 197);
  }
+
  .container{
      width: 350px;
      height: 370px;
@@ -81,13 +89,14 @@ html, body{
      transform: translateY(20%);
 
  }
+
  .cover{
      width: 100%;
      height: 100%;
      position: absolute;
      left: 0px;
      background-color: #9eb5d1;
-     transform: rotateY(20deg);
+     transform: rotateY(05deg);
      transform-style: preserve-3d;
      transform-origin: left;
      transition: all 1s ease-in;
@@ -124,6 +133,7 @@ footer{
     top: 90%;
     left: 3%;
 }
+
 footer p{
    color: rgb(104, 16, 104);
 }
